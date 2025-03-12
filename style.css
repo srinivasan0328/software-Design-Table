@@ -1,4 +1,9 @@
-/* Table Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+}
+h2 {
+    font-family: 'Poppins', sans-serif;
+}
 .custom-table {
     background: #ffffff;
     border-radius: 10px;
@@ -7,7 +12,7 @@
 }
 .custom-table th {
     background: #343a40;
-    color: white;
+    color: #ffffff;
     text-align: center;
     font-size: 1.2rem;
     padding: 15px;
@@ -16,6 +21,7 @@
     padding: 12px;
     font-size: 1.1rem;
     vertical-align: middle;
+    color: #333;
 }
 .custom-table tr:nth-child(even) {
     background: #f8f9fa;
@@ -24,16 +30,18 @@
     background: #d4edda !important;
     font-weight: bold;
     text-align: center;
+    color: #155724;
 }
 .highlight-yellow {
     background: #fff3cd !important;
     font-weight: bold;
     text-align: center;
+    color: #856404;
 }
-li{
-list-style: none;
+.icon {
+    color: #007bff;
+    margin-right: 8px;
 }
-/* Animations */
 .table-row {
     opacity: 0;
     transform: translateY(20px);
@@ -49,33 +57,11 @@ list-style: none;
         transform: translateY(0);
     }
 }
-/* Button Styling */
 .btn-container {
     text-align: center;
     margin-top: 20px;
 }
-.btn-custom {
-    font-size: 1rem;
-    padding: 10px 20px;
-    border-radius: 30px;
-    font-weight: bold;
-    text-transform: uppercase;
-    transition: 0.3s;
-    margin: 10px;
-}
-.btn-register {
-    background: #ff5722;
-    color: #fff;
-}
-.btn-register:hover {
-    background: #e64a19;
-    transform: scale(1.1);
-}
-.btn-enquiry {
-    background: #007bff;
-    color: #fff;
-}
-.btn-enquiry:hover {
-    background: #0056b3;
-    transform: scale(1.1);
+.form-container {
+    display: none;
+    margin-top: 20px;
 }

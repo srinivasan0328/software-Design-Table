@@ -3,71 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Training Details Table</title>
-    <link rel="shortcut icon" href="./assets/images/favIcon.png" type="image/x-icon">
+    <title>Training Details</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto:wght@400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
 
 <div class="container my-5">
-    <h2 class="text-center text-primary mb-4">Training & Job Assurance Details</h2>
+    <h2 class="text-center text-primary mb-4"><i class="fa-solid fa-graduation-cap icon"></i> Training & Job Assurance Details</h2>
+    
     <div class="table-responsive">
         <table class="table table-bordered custom-table">
             <thead>
                 <tr class="table-row">
-                    <th><i class="fa-solid fa-book"></i> Training & Details</th>
-                    <th><i class="fa-solid fa-info-circle"></i> Information</th>
+                    <th>Training & Details</th>
+                    <th>Information</th>
                 </tr>
             </thead>
             <tbody>
                 <tr class="table-row">
-                    <td><i class="fa-solid fa-cube"></i> <strong>3D CAD Software</strong></td>
+                    <td><i class="fa-solid fa-cube icon"></i><strong>3D CAD Software</strong></td>
                     <td>Part Module, Assembly Module, Drafting Module</td>
                 </tr>
                 <tr class="table-row">
-                    <td><i class="fa-solid fa-chalkboard-teacher"></i> <strong>On Job Training</strong></td>
+                    <td><i class="fa-solid fa-chalkboard-teacher icon"></i><strong>On Job Training</strong></td>
                     <td>Able to create Industry Standard Drawings</td>
                 </tr>
                 <tr class="table-row">
-                    <td><i class="fa-solid fa-book-open"></i> <strong>Technical Training</strong></td>
-                    <td>
-                        <ul class="mb-0 pl-0">
-                            <li><i class="fa-solid fa-check-circle text-success"></i> GD&T</li>
-                            <li><i class="fa-solid fa-check-circle text-success"></i> Limits and Fits</li>
-                            <li><i class="fa-solid fa-check-circle text-success"></i> Surface Roughness</li>
-                            <li><i class="fa-solid fa-check-circle text-success"></i> Drawing Reading Skills</li>
-                        </ul>
-                    </td>
-                </tr>
-                <tr class="table-row highlight-green">
-                    <td><i class="fa-solid fa-briefcase"></i> <strong>100% Job Assured</strong></td>
-                    <td>Guaranteed placement after training</td>
+                    <td><i class="fa-solid fa-book-open icon"></i><strong>Technical Training</strong></td>
+                    <td>GD&T, Limits and Fits, Surface Roughness, Drawing Reading Skills</td>
                 </tr>
                 <tr class="table-row">
-                    <td><i class="fa-solid fa-money-bill-wave"></i> <strong>Fees</strong></td>
-                    <td>Rs. 50,000/- <br> (Payable in 3 Installments)</td>
+                    <td><i class="fa-solid fa-money-bill icon"></i><strong>Fees</strong></td>
+                    <td>Rs. 50,000/- (Payable in 3 Installments)</td>
                 </tr>
                 <tr class="table-row">
-                    <td><i class="fa-solid fa-hand-holding-usd"></i> <strong>Fees Includes</strong></td>
+                    <td><i class="fa-solid fa-hand-holding-usd icon"></i><strong>Fees Includes</strong></td>
                     <td>Only for the course</td>
                 </tr>
+                <tr class="table-row highlight-green">
+                    <td><i class="fa-solid fa-briefcase icon"></i><strong>100% Job Assured</strong></td>
+                    <td>Guaranteed placement after training</td>
+                </tr>
                 <tr class="table-row highlight-yellow">
-                    <td><i class="fa-solid fa-thumbs-up"></i> <strong>Job Placement Fees</strong></td>
+                    <td><i class="fa-solid fa-gift icon"></i><strong>Job Placement Fees</strong></td>
                     <td><strong>Absolutely Free!</strong></td>
                 </tr>
             </tbody>
         </table>
     </div>
+
     <div class="btn-container">
-        <button class="btn btn-custom btn-register"><i class="fa-solid fa-user-plus"></i> Register Now</button>
-        <button class="btn btn-custom btn-enquiry"><i class="fa-solid fa-question-circle"></i> Enquiry</button>
+        <button id="enquiryBtn" class="btn btn-info mr-2">Enquiry</button>
+        <button id="registerBtn" class="btn btn-success">Register</button>
+    </div>
+
+    <div id="enquiryForm" class="form-container">
+        <h4>Enquiry Form</h4>
+        <input type="text" class="form-control mb-2" placeholder="Your Name">
+        <input type="email" class="form-control mb-2" placeholder="Your Email">
+        <textarea class="form-control mb-2" placeholder="Your Message"></textarea>
+        <button class="btn btn-primary">Submit</button>
+    </div>
+
+    <div id="registerForm" class="form-container">
+        <h4>Registration Form</h4>
+        <input type="text" class="form-control mb-2" placeholder="Your Name">
+        <input type="email" class="form-control mb-2" placeholder="Your Email">
+        <input type="tel" class="form-control mb-2" placeholder="Your Phone">
+        <button class="btn btn-success">Register</button>
     </div>
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
 
+<script src="./script.js"></script>
 </body>
 </html>
