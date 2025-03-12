@@ -1,0 +1,81 @@
+/* Table Styling */
+.custom-table {
+    background: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+.custom-table th {
+    background: #343a40;
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 15px;
+}
+.custom-table td {
+    padding: 12px;
+    font-size: 1.1rem;
+    vertical-align: middle;
+}
+.custom-table tr:nth-child(even) {
+    background: #f8f9fa;
+}
+.highlight-green {
+    background: #d4edda !important;
+    font-weight: bold;
+    text-align: center;
+}
+.highlight-yellow {
+    background: #fff3cd !important;
+    font-weight: bold;
+    text-align: center;
+}
+li{
+list-style: none;
+}
+/* Animations */
+.table-row {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.6s ease-in-out forwards;
+}
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* Button Styling */
+.btn-container {
+    text-align: center;
+    margin-top: 20px;
+}
+.btn-custom {
+    font-size: 1rem;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 0.3s;
+    margin: 10px;
+}
+.btn-register {
+    background: #ff5722;
+    color: #fff;
+}
+.btn-register:hover {
+    background: #e64a19;
+    transform: scale(1.1);
+}
+.btn-enquiry {
+    background: #007bff;
+    color: #fff;
+}
+.btn-enquiry:hover {
+    background: #0056b3;
+    transform: scale(1.1);
+}
